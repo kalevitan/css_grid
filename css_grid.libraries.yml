@@ -1,0 +1,5 @@
+css_grid:
+  version: 1.x
+  css:
+    layout:
+      css/style.css: {}

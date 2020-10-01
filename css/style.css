@@ -1,0 +1,18 @@
+.grid-layout {
+  align-items: start;
+  display: grid;
+}
+
+.grid-layout img {
+  width: 100%;
+  height: auto;
+}
+
+.layout-builder__add-block {
+  height: 100%;
+}
+
+.layout-builder__region {
+  overflow: hidden;
+}
+

@@ -1,0 +1,9 @@
+name: 'CSS Grid'
+type: module
+description: 'Integrates CSS Grid with Layout Builder'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - layout_builder
+  - layout_discovery

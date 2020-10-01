@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains css_grid.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function css_grid_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the css_grid module.
+    case 'help.page.css_grid':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integrates CSS Grid with Layout Builder') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function css_grid_theme() {
+  return [
+    'css_grid' => [
+      'render element' => 'children',
+    ],
+  ];
+}
